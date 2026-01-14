@@ -1,7 +1,7 @@
 local M = {}
 
 function M.setup()
-  vim.api.nvim_create_user_command("CounBuffs",
+  vim.api.nvim_create_user_command("CountBuffs",
     function()
       local ids = vim.api.nvim_list_bufs()
       print("Opened buffers:\n")
